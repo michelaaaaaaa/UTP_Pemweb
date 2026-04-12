@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #f9f9f9;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    background-color: #f9f9f9;
+    z-index: 1000;
+}
+
+.logo img {
+    flex: 1;
+    height: 40px;
+}
+
+nav .navlink {
+    flex: 2;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-container {
+    background: #213d9a8d;
+    padding: 10px;
+    border-radius: 999px;
+    display: flex;
+    gap: 10px;
+    backdrop-filter: blur(10px);
+}
+
+.nav-container a {
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 999px;
+    font-size: 14px;
+    transition: 0.3s;
+    color: black;
+    font-weight: 500;
+   
+}
+
+.nav-container a.active {
+    background: #213e9a;
+    color: white;
+}
+
+.nav-container a:hover {
+    background: #213e9a;
+    color: white;
+}
+
+.locations-hero {
+    background: #213e9a;
+    color: white;
+    padding: 60px 8%;
+    text-align: center;
+}
+
+.locations-content {
+    padding: 80px 8%;
+    background: #f9f9f9;
+}
+
+.location-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.location-card {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+.location-card h3 {
+    color: #D4AF37;
+    font-size: 28.8px;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #f0f0f0;
+    padding-bottom: 10px;
+}
+
+.store-item {
+    margin-bottom: 20px;
+}
+
+.store-item strong {
+    display: block;
+    font-size: 18px;
+    color: #222;
+}
+
+.store-item p {
+    color: #666;
+    font-size: 16px;
+    margin-top: 5px;
+}

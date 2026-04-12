@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #f9f9f9;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    background-color: #f9f9f9;
+    z-index: 1000;
+}
+
+.logo img {
+    flex: 1;
+    height: 40px;
+}
+
+nav .navlink {
+    flex: 2;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-container {
+    background: #213d9a8d;
+    padding: 10px;
+    border-radius: 999px;
+    display: flex;
+    gap: 10px;
+    backdrop-filter: blur(10px);
+}
+
+.nav-container a {
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 999px;
+    font-size: 14px;
+    transition: 0.3s;
+    color: black;
+    font-weight: 500;
+}
+
+.nav-container a.active {
+    background: #213e9a;
+    color: white;
+}
+
+.nav-container a:hover {
+    background: #213e9a;
+    color: white;
+}
+
+.hero {
+    background: 
+        linear-gradient(
+            rgba(0,0,0,0.4), 
+            rgba(0,0,0,0.4)
+        ),
+    url('bgimg.jpg') center/cover;
+    color: white;
+    padding: 80px 8%;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+}
+
+.hero-container {
+    text-align: left;
+    max-width: 700px;
+}
+
+.title {
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 1.2;
+    color: #213e9a;
+}
+
+.title span {
+    color: white;
+}
+
+.subtitle {
+    margin-top: 15px;
+    color: rgb(180, 180, 180);
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.btn {
+    background: #E53935;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+}
+
+.about {
+    padding: 100px 8%;
+    background: #f8f9fc;
+}
+
+.about-kiri, .about-kanan {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    margin-bottom: 80px;
+}
+
+.about-kanan {
+    flex-direction: row-reverse;
+}
+
+.about-text {
+    flex: 1;
+}
+
+.about-text h3 {
+    font-size: 26px;
+    margin-bottom: 15px;
+    color: #213e9a;
+}
+
+.about-text p {
+    color: #555;
+    line-height: 1.7;
+}
+
+.about-img {
+    flex: 1;
+}
+
+.about-img img {
+    width: 100%;
+    height: 300px;          
+    object-fit: cover;     
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+.about-img img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 15px 40px rgba(0,0,0,0.2);
+}
